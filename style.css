@@ -118,6 +118,8 @@ a.nav:hover:after {
     
 }
 
+
+/* Наши проекты */
 .o_project{
     height: auto;
     width: 90%;
@@ -132,6 +134,8 @@ a.nav:hover:after {
     flex-direction: column;
 }
 
+
+/* Почему выбирают нас? */
 .sec_vibor{
     display: flex;
     margin: auto;
@@ -180,16 +184,55 @@ a.nav:hover:after {
 }
 
 .block_li{
-    height: 50vh;
-
+    display: flex;
+    justify-content: space-around;
     width: 100%;
+    margin-top: 10%
 }
 .block_li_text{
-    width: 30%;
-    text-align: center;
-    font-size: 1.5em;
+    width: 15%;
+    font-size: 1.7em;
+    background-color: #cbcfd9;
+    padding: 4% 2% 2% 2%;
+    border-radius: 5%;
+    margin-bottom: 5%;
 }
 
+
+/* О нас */
+.Sec_o_nas{
+    width: 90%;
+    padding-top: 5%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.Sec_o_nas h1{
+    font-size: 3em;
+    font-family: 'Times New Roman', serif;
+}
+
+.o_nas_text{
+    margin-top: 3%;
+    padding: 5%;    
+    font-size: 1.8em;
+    padding-left: 5%;
+    position: absolute;
+    width: 35%;
+}
+.pictures_o_nas{
+    margin-top: 10%;
+    width: 50%;
+    height: 100vh;
+}
+.pictures_o_nas img{
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: -200px 250px #8795b7;
+}
 
 
 
@@ -271,3 +314,8 @@ a.nav:hover:after {
         transform: translateY(0);
     }
 }
+
+
+
+
+/* 2560 x 1440 */
