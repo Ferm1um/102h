@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Libre Caslon Display';
+    src: url('font/LibreCaslonDisplay-Regular.ttf') format('Regular');
+}
+
 body{
     width: 100%;
     margin: auto;
@@ -36,7 +41,6 @@ header{
 }
 
 a.nav{
-    font-family: ;
     font-size: 1.5rem;
     margin: auto;
     position: relative;
@@ -81,17 +85,19 @@ a.nav:hover:after {
     width: 40%;
     padding-left: 2%;
     font-family: 'Libre Caslon Display';
-
-    letter-spacing: 0.1em;
+    letter-spacing: 0.5em;
     display: flex;
     margin: 0%;
 }
 .log p{
     padding-top: 2.5%;
     margin: 0;
-    font-size: 3em;
+    font-size: 4em;
 }
-
+.log a{
+    color: white;
+    text-decoration: none;
+}
 .inf{
 
     height: 80vh;
@@ -121,19 +127,40 @@ a.nav:hover:after {
 
 /* Наши проекты */
 .o_project{
+    padding-top: 4%;
     height: auto;
-    width: 90%;
+    width: 80%;
     margin: auto;
     font-family: 'Libre Caslon Display';
     font-size: 2em;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
 }
 .project{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
+.project_block{
+    width: 100%; 
+    display: flex;
+    justify-content: end;
+}
+.project_block_1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.project_block img{
+    width: 60vh;
+    height: 50vh;
+    border-radius: 15px; 
+}
+.project_block_1 img{
+    width: 60vh;
+    height: 50vh;
+    border-radius: 15px;
+}
 
 /* Почему выбирают нас? */
 .sec_vibor{
@@ -155,9 +182,14 @@ a.nav:hover:after {
 }
 
 .vibor_text{
+    margin-top: 3%;
     font-size: 4em;
     padding-left: 5%;
     position: absolute;
+
+}
+.vibor_text h3{
+    
 }
 .vibor_block{
     display: flex;
@@ -165,9 +197,10 @@ a.nav:hover:after {
     width: 50%;
     background-color: #cbcfd9;
     border-radius: 40px;
-    height: 30vh;
-    margin-top: 10%;
+    height: 32vh;
+    margin-top: 5%;
     justify-content: space-around;
+    
 }
 
 .vibor_block_text{
@@ -187,7 +220,7 @@ a.nav:hover:after {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 10%
+    margin-top: 10%;
 }
 .block_li_text{
     width: 15%;
@@ -196,6 +229,9 @@ a.nav:hover:after {
     padding: 4% 2% 2% 2%;
     border-radius: 5%;
     margin-bottom: 5%;
+    opacity: 0;
+    
+    transform: translateY(100px); /* Начальное состояние - смещение вниз */
 }
 
 
@@ -250,7 +286,7 @@ a.nav:hover:after {
     text-align: center;
 }
 .otzivi h1{
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Times New Roman', serif;
 }
 
@@ -259,6 +295,7 @@ a.nav:hover:after {
     width: 100%;
     overflow: hidden;
     position: relative;
+    padding-left: 3%;
 }
 
 .slider {
@@ -267,24 +304,25 @@ a.nav:hover:after {
 }
 
 .slide {
-    min-width: 25%;
+    min-width: 20%;
     padding: 10px;
     text-align: center;
     background-color: #ACB8CF;
-    margin-right: 8%;
-    border-radius: 10%;
-    font-size: 1.3em;
-
+    margin-right: 15%;
+    border-radius: 20px;
+    font-size: 1.1em;
 }
 
 .slide img {
-    width: 100px;
-    height: 100px;
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     margin-top: 8%;
 }
 
 .slide p{
+    margin: auto;
+    width: 90%;
     padding-bottom: 15%;
 }
 
@@ -309,43 +347,199 @@ button.next {
 }
 
 
+.sec_kon{
+    padding-top: 6%;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #acb8cf ;
+    padding-bottom: 3%;
+}
+
+.kon{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.kon_text{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+}
+.kon_text h1{
+    margin-top: auto;
+    font-size: 3.5em;
+}
+.kon_text h2{
+    margin: auto;
+    font-size: 2.5em;
+}
+.kon_text p{
+    margin-top: auto;
+    font-size: 2em;
+}
 
 
+/* Подвал */
 
+.poka{
+    background-image: linear-gradient( to bottom, #6d7b9c 0%, #6c7a9c 100%);
+    color: white;
+    align-self: flex-end;
+    float: left;
+    width: 100%;
+    padding-bottom: 2%;
+}
 
+.Sec_o_nas_icon{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #8795b7;
+    border-radius: 50%;
+    margin-right: 5%;
+    margin-top: 10%;
+     /* Элемент будет виден после прокрутки */
+    opacity: 0;
+    transform: scale(1.2);
+}
 
+.Sec_o_nas_icon img{
+    width: 80px;
+    height: 80px;
+    margin-top: 9%;
+    margin-left: 10%;
+    padding-right: 50%;
+}
+
+.img1 img{
+    width: 75px;
+    height: 75px;
+    margin-top: 9%;
+    margin-left: 10%;
+    padding-right: 50%;
+}
+
+.Sec_o_nas_icon p{
+    
+}
+
+.log_f a{
+color: white;
+text-decoration: none;
+}
 
 .page{
     overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
 }
 .divf1{
-    color: white;
-    align-self: flex-end;
-    float: left;
-    margin-left: 8%;
-    margin-top: 1.5%;
+    margin: auto;
+    margin-top: 3%;
     width: 90%;
-}
-.divf3{
-    float: right;
-    margin-top: 0;
-    width: 40%;
-    margin-right: 8%;
-}
-.nav-2{
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
+    border-top: 3px solid;
 }
 
+.nav-2{
+}
+
+
+.footer_1{
+    display: flex;
+    margin-top: 3%;
+}
+
+.log_f{
+    width: 25%;
+    font-family: 'Libre Caslon Display';
+    letter-spacing: 0.5em;
+    margin: 0%;
+}
+.log_f p {
+    font-size: 4em;
+    margin: auto;
+}
+
+.nav_1{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+a.nav-2{
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3%;
+}
+p.nav-2{
+    font-family: 'Libre Caslon Display';
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.1em;
+}
+
+a.nav-2:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+a.nav-2:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(255, 255, 255); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+} 
+
+.nav-3{
+    display: flex;
+    justify-content: space-between;
+}
+a.nav-3{
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.nav_1_1{
+    margin: 0;
+}
 
 .slide-in{
     opacity: 0;
     transform: translateY(-50px);
-    animation: slide-in 5s forwards;
+    animation: slide-in 2s forwards;
 }
 
 .slide-in_1{
@@ -370,6 +564,54 @@ button.next {
 
 
 
+@media (prefers-reduced-motion: no-preference) {
+    .Sec_o_nas_icon {
+        transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+}
+
+.slide-in_4 {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slide-in 1s forwards;
+}
+
+.delay-5 {
+    animation-delay: 0s;
+}
+
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .block_li_text {
+        transition: opacity 2s ease, transform 2s ease;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Конечное состояние - без смещения */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Задержки для последовательного появления элементов */
 .delay-1 {
@@ -377,14 +619,18 @@ button.next {
 }
 
 .delay-2 {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .delay-3 {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 .delay-4 {
-    animation-delay: 3s;
+    animation-delay: 1.5s;
+}
+
+.delay-5 {
+    animation-delay: 1s;
 }
 
 @keyframes slide-in {

@@ -37,3 +37,48 @@ function prevSlide() {
 
 // Инициализация слайдов
 showSlides();
+
+
+
+
+// Анимация появления
+ // Получить все элементы с классом Sec_o_nas_icon
+ const icons = document.querySelectorAll('.Sec_o_nas_icon');
+        
+ // Создать наблюдатель за появлением элементов
+ const observer = new IntersectionObserver(entries => {
+     entries.forEach(entry => {
+         if (entry.isIntersecting) {
+             entry.target.classList.add('slide-in_4');
+             observer.unobserve(entry.target); // Отключить наблюдение после срабатывания
+         }
+     });
+ });
+
+ // Применить наблюдатель ко всем элементам
+ icons.forEach(icon => {
+     icon.classList.remove('slide-in_4'); // Удалить класс при загрузке страницы
+     observer.observe(icon);
+ });
+
+
+
+//  анимаци почему выбирают нас
+        // Получить все элементы с классом block_li_text
+        const textBlocks = document.querySelectorAll('.block_li_text');
+
+
+        // Создать наблюдатель за появлением элементов
+        const observer_1 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer_1.unobserve(entry.target); // Отключить наблюдение после срабатывания
+                }
+            });
+        });
+
+        // Применить наблюдатель ко всем элементам
+        textBlocks.forEach(block => {
+            observer_1.observe(block);
+        });
