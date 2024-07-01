@@ -346,6 +346,7 @@ a.nav:hover:after {
     height: 95px;
     border-radius: 50%;
     margin-top: 8%;
+    object-fit: cover;
 }
 
 .slide p{
@@ -699,8 +700,9 @@ a.nav-3{
         min-width: 23%;
         font-size: 1.8em;
         margin-right: 10%;
+    
     }
-    nav{
+    .nav{
         width: 50%;
     }
     
