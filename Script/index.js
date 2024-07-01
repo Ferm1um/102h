@@ -82,3 +82,38 @@ showSlides();
         textBlocks.forEach(block => {
             observer_1.observe(block);
         });
+
+
+//  анимаци почему выбирают нас
+        // Получить все элементы с классом block_li_text
+        const textBlocks_1 = document.querySelectorAll('.project');
+        const textBlocks_2 = document.querySelectorAll('.project_block_1');
+
+        // Создать наблюдатель за появлением элементов
+        const observer_2 = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in_1');
+                    observer_2.unobserve(entry.target); // Отключить наблюдение после срабатывания
+                }
+            });
+        });
+
+        // Применить наблюдатель ко всем элементам
+        textBlocks_1.forEach(block => {
+            observer_2.observe(block);
+        });
+        textBlocks_2.forEach(block => {
+            observer_2.observe(block);
+        });
+
+
+ // Добавить класс .scrolled к .navigation после прокрутки
+ window.addEventListener('scroll', () => {
+    const navigation = document.querySelector('.navigation');
+    if (window.scrollY > 0) {
+        navigation.classList.add('scrolled');
+    } else {
+        navigation.classList.remove('scrolled');
+    }
+});

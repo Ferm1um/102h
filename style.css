@@ -79,6 +79,15 @@ a.nav:hover:after {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
+    position: fixed; /* Закрепление блока */
+    top: 0; /* Привязка к верхней части экрана */
+    left: 0; /* Привязка к левой части экрана */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease; /* Плавный переход фона и размытия */
+    z-index: 1000; /* Установить высокий z-index, чтобы навигация была выше других элементов */
+}
+.navigation.scrolled {
+    background-color: rgba(0, 0, 0, 0.1); /* Темный фон после прокрутки */
+    backdrop-filter: blur(2px); /* Эффект размытия */
 }
 
 .log{
@@ -90,7 +99,7 @@ a.nav:hover:after {
     margin: 0%;
 }
 .log p{
-    padding-top: 2.5%;
+    padding-top: 0.7%;
     margin: 0;
     font-size: 4em;
 }
@@ -139,6 +148,15 @@ a.nav:hover:after {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    opacity: 0;
+    transform: translateX(-1600px);
+}
+.project h1{
+
+}
+.o_project h1{
+    font-size: 2em;
+    /* font-family: sans-serif; */
 }
 .project_block{
     width: 100%; 
@@ -149,17 +167,28 @@ a.nav:hover:after {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    opacity: 0;
+    transform: translateX(1600px);
 }
 
 .project_block img{
-    width: 60vh;
-    height: 50vh;
+    width: 65vh;
+    height: 55vh;
     border-radius: 15px; 
+    transition: transform 0.3s ease; /* Плавный переход при наведении */
+}
+.project_block img:hover {
+    transform: scale(1.1); /* Увеличение размера при наведении */
+}
+
+.project_block_1 img:hover {
+    transform: scale(1.1); /* Увеличение размера при наведении */
 }
 .project_block_1 img{
-    width: 60vh;
-    height: 50vh;
+    width: 65vh;
+    height: 55vh;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 
 /* Почему выбирают нас? */
@@ -197,7 +226,7 @@ a.nav:hover:after {
     width: 50%;
     background-color: #cbcfd9;
     border-radius: 40px;
-    height: 32vh;
+    height: 100%;
     margin-top: 5%;
     justify-content: space-around;
     
@@ -226,11 +255,10 @@ a.nav:hover:after {
     width: 15%;
     font-size: 1.7em;
     background-color: #cbcfd9;
-    padding: 4% 2% 2% 2%;
-    border-radius: 5%;
+    padding: 1% 2% 2% 2%;
+    border-radius: 20px;
     margin-bottom: 5%;
     opacity: 0;
-    
     transform: translateY(100px); /* Начальное состояние - смещение вниз */
 }
 
@@ -594,6 +622,12 @@ a.nav-3{
     .block_li_text {
         transition: opacity 2s ease, transform 2s ease;
     }
+    .project{
+        transition: opacity 3s ease, transform 4s ease;
+    }
+    .project_block_1{
+        transition: opacity 3s ease, transform 4s ease;
+    }
 }
 
 .fade-in {
@@ -601,15 +635,10 @@ a.nav-3{
     transform: translateY(0); /* Конечное состояние - без смещения */
 }
 
-
-
-
-
-
-
-
-
-
+.fade-in_1 {
+    opacity: 1;
+    transform: translateX(0); /* Конечное состояние - без смещения */
+}
 
 
 
@@ -642,5 +671,40 @@ a.nav-3{
 
 
 
+
+ /* Media queries для экранов от 1920x1080 до 2560x1440 */
+ @media  (min-width: 2500px) {
+    .navigation {
+        font-size: 2em;
+    }
+    a.nav{
+        font-size: 1.4em;
+    }
+    .o_nas_text p{
+        font-size: 1.4em;
+    }
+    .vibor_block_text{
+        font-size: 2em;
+    }
+    .block_li_text{
+        font-size: 2em;
+    }
+    .vibor_text h3{
+        font-size: 2em;
+    }
+    .sec_vibor{
+        margin-top: 0%;
+    }
+    .slide{
+        min-width: 23%;
+        font-size: 1.8em;
+        margin-right: 10%;
+    }
+    nav{
+        width: 50%;
+    }
+    
+
+}
 
 /* 2560 x 1440 */
