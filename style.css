@@ -679,7 +679,12 @@ a.nav-3{
         font-size: 2em;
     }
     a.nav{
-        font-size: 1.4em;
+        font-size: 1.1em;
+        text-align: center;
+        width: auto;
+    }
+    nav{
+        width: 65%;
     }
     .o_nas_text p{
         font-size: 1.4em;
@@ -691,7 +696,8 @@ a.nav-3{
         font-size: 2em;
     }
     .vibor_text h3{
-        font-size: 2em;
+        margin-top: 2%;
+        font-size: 1.7em;
     }
     .sec_vibor{
         margin-top: 0%;
@@ -704,6 +710,13 @@ a.nav-3{
     }
     .nav{
         width: 50%;
+    }
+    .inf_1{
+        padding-top: 10%;
+        font-size: 5em;
+    }
+    .inf_2{
+        font-size: 3em;
     }
     
 
