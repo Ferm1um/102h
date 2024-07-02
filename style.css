@@ -18,10 +18,13 @@ section{
 }
 
 nav{
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: end;
     margin: auto;
+}
+nav p{
+    font-size: 1.4em;
 }
 .navigation p {
     padding-right: 10%;
@@ -146,11 +149,13 @@ a.nav:hover:after {
 }
 .name h1{
     text-align: center;
-    font-size: 5em;
-    letter-spacing: 0.3em;
+    font-size: 4em;
+    letter-spacing: 0.1em;
     margin: auto;
-    padding-top: 7%;
+    padding-top: 7.6%;
 }
+
+
 .name-line{
     background-color: #5a97d8;
     width: 100%;
@@ -170,8 +175,10 @@ a.nav:hover:after {
 }
 .project{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+
+    display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
 
     
 }
@@ -764,8 +771,11 @@ a.nav-3{
         margin-right: 10%;
     
     }
-    .nav{
+    nav{
         margin: auto;
+    }
+    nav p{
+        font-size: 1.1em;
     }
     .inf_1{
         padding-top: 10%;
