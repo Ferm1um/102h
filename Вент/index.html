@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="import" href="font/LibreCaslonDisplay-Regular.ttf">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <title>ArktikaM</title>
 </head>
@@ -14,16 +16,18 @@
 
         <div class="navigation">
             <div class="log">
-                <img src="img/icon.png" alt="" style="width: 90px; padding-bottom: 2%; padding-right: 3%;">
-                <p style="">ArktikaM</p>
+                <img src="img/icon.png" alt="" style="width: 90px;  padding-right: 3%;">
+                <p> <a href="#" >ArktikaM</a></p>
                 
             </div>
             
 
         <nav>
+            <p class="nav">+7(919) 962-62-22</p>
             <a class="nav" href="#">Главная</a>
+            <a class="nav" href="#ons">О нас</a>
             <a class="nav" href="#us">Услуги</a>
-            <a class="nav" href="#nr">Наши работы</a>
+            <a class="nav" href="#nr">Примеры работ</a>
             <a class="nav" href="#otz">Отзывы</a>
             <a class="nav" href="#kon">Контакты</a>
         </nav>
@@ -54,70 +58,122 @@
         </div>
     </div>
 
+<!-- #08428b -->
+    <div class="name"> 
+    <h1>
+        ArktikaM
+    </h1>
+</div>
+    <div class="name-line">
+    </div>
+
         
     </header>
 
     <main>
         <!--Наши проекты -->
-        <!-- <section class="o_project">
-            <div >
-                <h1>Наши работы</h1>
+        <section class="o_project">
+            <div>
+                <h1 id="nr">Примеры работ</h1>
             </div>
 
             <div class="project">
-                <div style="width: 100%;  display: flex; justify-content: end;">  
-                    <img src="img/Olen_2.jpg" alt="прокет_1" style="width: 600px; height: 500px; border-radius: 15px">
+
+
+                <div class="project_block_2" >
+                    <img src="img/vent_2.webp" alt="" >
                 </div>
-                <br>
-                
-                <div style="width: 100%;  display: flex;">  
-                    <img src="img/Olen_2.jpg" alt="прокет_2" style="width: 600px; height: 500px; border-radius: 15px;">
+
+                <div>
+                    <div class="project_block">  
+                        <img src="img/vent_3.webp" alt="прокет_1" > 
+                    </div>
+                    <div style="    display: flex; width: auto; justify-content: flex-end; font-size: 1.1em;">
+                        <p>Щелевая приточная решётка</p>
+                    </div>
                 </div>
 
             </div>
-        </section> -->
+                
+                <div class="project_block_1">  
+                    <div>
+                        <div class="project_block_1_i"> 
+                            <img src="img/vent_4.webp" alt="прокет_2" >
+                        </div>
+                        <div style="   display: flex; width: auto; font-size: 1.1em; ">
+                            <p>Диффузор приточно-вытяжной</p>
+                        </div>
+                    </div>
+
+                    <div class="project_block_2" >
+                        <img src="img/vent_6.webp" alt="" style="width: 45vh;" >
+                    </div>
+                </div>
+
+                <div class="project">
+
+                    <div class="project_block_2" >
+                        <img src="img/vent_7.webp" alt="" style="width: 45vh;">
+                    </div>
+    
+                    <div>
+
+                        <div class="project_block">  
+                            <img src="img/vent_5.webp" alt="прокет_3" > 
+                        </div>
+                        <div style="    display: flex; width: auto; justify-content: flex-end; font-size: 1.1em;">
+                            <p>Щелевая решётка для стен, пола и потолка</p>
+                        </div>
+                    </div>
+            
+                
+    
+
+            </div>
+        </section> 
 
 
                 <!--О нас-->
         <section class="Sec_o_nas">
-                    <div style="width: 25%; ;padding-left: 10%;">
-                        <h1>О НАС</h1>
+                    <div style="width: 25%; ;padding-left: 10%; font-size: 1.5em;">
+                        <h1 id="ons">О НАС</h1>
                     </div>
         
                     <div class="o_nas_text">
                     <p>
-                        Our company is a leading provider of ventilation solutions for the premium sector of private <br>
-                        clients <br>
-                        We offer comprehensive services for the design, installation <br>
-                        and maintenance of ventilation systems of any complexity <br>
-                    </p>
-        
-                    <div style="display: flex; margin-top: 15%;">
-                        <img src="img/Olen_2.jpg" alt="" style="width: 100px; height: 100px; background-color: aliceblue; border-radius: 50%; margin-right: 5%;">
+                        Наша компания - ведущий поставщик решений в области вентиляции
+                        для премиум сектора частных клиентов. Более чем с 30-летним опытом
+                        работы, мы предлагаем комплексные услуги по проектированию,
+                        монтажу и обслуживанию систем вентиляции любой сложности. <br>
+                    <br>
+
+
+                    <div class="Sec_o_nas_icon slide-in_4 delay-5">
+                        <img src="img/icons8-одобрено-100.png" alt="">
                         <p>
-                            Professional
-                            <br>specialists
+                            Профессиональные
+                            <br>специалисты
                         </p>
                     </div>
-                    <div style="display: flex; margin-top: 5%;">
-                        <img src="img/Olen_2.jpg" alt="" style="width: 100px; height: 100px; background-color: aliceblue; border-radius: 50%; margin-right: 5%;">
+                    <div class="Sec_o_nas_icon slide-in_4 delay-5">
+                            <img src="img/2401393.png" alt="">
                         <p>
-                            Individual 
-                            <br>approach
+                            Индивидуальный
+                            <br>подход
                         </p>
                     </div>
-                    <div style="display: flex; margin-top: 5%;">
-                        <img src="img/Olen_2.jpg" alt="" style="width: 100px; height: 100px; background-color: aliceblue; border-radius: 50%; margin-right: 5%;">
+                    <div class="Sec_o_nas_icon slide-in_4 delay-5">
+                        <img src="img/turbo_2906172.png" alt="">
                         <p>
-                            Modern
-                            <br>equipment
+                            Современное
+                            <br>оборудование
                         </p>
                     </div>
-                    <div style="display: flex; margin-top: 5%;">
-                        <img src="img/Olen_2.jpg" alt="" style="width: 100px; height: 100px; background-color: aliceblue; border-radius: 50%; margin-right: 5%;">
+                    <div class="Sec_o_nas_icon img1 slide-in_4 delay-5"> 
+                        <img src="img/time-is-money_6900830.png" alt="">
                         <p>
-                            Savings 
-                            <br>time and money
+                            Экономия
+                            <br>времени и денег
                         </p>
                     </div>
                 </div>
@@ -127,27 +183,29 @@
                     <img src="img/vent.webp" alt="">
         
                 </div>
-        
+
+                
+    
         </section>
                 
         <section class="sec_vibor">  <!--Переписать название класса-->
-            <div class="vibor">
+            <div class="vibor" id="us">
                 <div class="vibor_text">
-                    <p>We carry out the installation <br> of chimneys of any <br> complexity</p>
+                    <h3>Преимущества <br> работы с нами:</h3>
                 </div>
 
                 <div class="vibor_block">
                     <div class="vibor_block_text">
-                        <h1>20+</h1>
-                        <p>years on the market of the Moscow region and Moscow</p>
+                        <h1>30 лет</h1>
+                        <p>Опыта работы в сфере проектирования и монтажа систем вентиляции и кондиционирования воздуха</p>
                     </div>
                     <div class="vibor_block_text">
-                        <h1 style="color: #5B72CC;">200+</h1>
-                        <p>ysuccessfully completed projects</p>
+                        <h1>200+</h1>
+                        <p>Успешно выполненых и завершенных объектов на территории Москвы и Московской области</p>
                     </div>
                     <div class="vibor_block_text">
-                        <h1>15</h1>
-                        <p>specialists in the state</p>
+                        <h1>15+</h1>
+                        <p>Специалистов, выполняющих монтажные и пусконаладочные работы</p>
                     </div>
                 </div>
             </div>
@@ -155,27 +213,153 @@
 
             <div class="block_li">
                 <div class="block_li_text">
-                   <li>Dionysius Maior, Siciliae tyrannus, ipse iudicavit, quam esset beatus. Nam, cum quidam ex eius assentatoribus</li>
-                   <li>Damŏcles, commemoraret in sermone copias eius, opes, maiestatem dominatus </li>
+                    <h3>Комплексный подход</h3>
+                       Мы предлагаем
+                    полный спектр услуг
+                    - от проектирования
+                    до монтажа и
+                    сервисного
+                    обслуживания
+                    вентиляционных
+                    систем <br>
+                       Это
+                    позволяет нам
+                    обеспечивать
+                    высокое качество на
+                    всех этапах работ.
                     </p> 
                 </div>
 
                 <div class="block_li_text">
-                    <li>Dionysius Maior, Siciliae tyrannus, ipse iudicavit, quam esset beatus. Nam, cum quidam ex eius assentatoribus</li>
-                    <li>Damŏcles, commemoraret in sermone copias eius, opes, maiestatem dominatus </li>
-                     </p> 
+                    <h3>Премиальное качество</h3>
+                        Используя только
+                    высококачественные
+                    материалы и
+                    передовые
+                    технологии, мы
+                    гарантируем
+                    долговечность и
+                    эффективность
+                    наших систем
+                    вентиляции. Это
+                    соответствует
+                    ожиданиям наших
+                    клиентов из
+                    премиум-сегмента.
+                
                  </div>
 
                  <div class="block_li_text">
-                    <li>Dionysius Maior, Siciliae tyrannus, ipse iudicavit, quam esset beatus. Nam, cum quidam ex eius assentatoribus</li>
-                    <li>Damŏcles, commemoraret in sermone copias eius, opes, maiestatem dominatus </li>
-                     </p> 
+                    <h3>Индивидуальный подход</h3>
+                    Каждый проект
+                        уникален, поэтому
+                        мы разрабатываем
+                        индивидуальные
+                        решения,
+                        учитывающие
+                        специфику объекта и
+                        пожелания
+                        заказчика. Это
+                        позволяет нам
+                        достигать
+                        максимального
+                        результата.
+                        
                  </div>
 
             </div>
         </section>
 
 
+    <!-- Отзывы -->
+    <section class="sec_otzivi">
+        <div class="otzivi">
+            <h1 id="otz">Отзывы</h1>
+
+            <div class="slider-container">
+                <div style="display: flex; justify-content: end;">
+                    <button class="prev strelki" onclick="prevSlide()">&larr;</button>
+                    <button class="next strelki" onclick="nextSlide()">&rarr;</button> 
+                </div>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="img/men_1.jpg" alt="">
+                        <p>Name</p>
+                  
+                        <p>Обращались в компанию "АртикаМ" за выполнением проектно-монтажных работ частного дома
+                             в посёлке Милениум парк. Нашей основной задачей было сохранение высоты потолков и 
+                             подбор оборудования с оптимальным соотношением цены и качества, а также проектирование 
+                             системы осушения бассейна. Команда "АртикаМ" быстро подготовила смету и коммерческое
+                             предложение, и уже через неделю приступила к работе на объекте без задержек.
+                             Мы остались очень довольны качеством монтажных работ. Это отзывчивая фирма с
+                             грамотными специалистами, и мы очень рады, что выбрали именно их!</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/men_2.jpeg" alt="">
+                        <p>Name</p>
+                        
+                        <p>Выбрали компанию «АртикаМ», чтобы выполнить проектирование и монтаж систем частного дома.
+                             Специалисты компании быстро подготовили все необходимые документы и вышли на объект.
+                             Все работы были выполнены качественно и в срок. Рекомендуем!</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/men_3.jpg" alt="">
+                        <p>Name</p>
+                       
+                        <p>Заказывали в компании «АртикаМ» проектирование и монтаж инженерных систем квартиры в
+                             центре Москвы. Сотрудники компании ответственно подошли к выполнению задачи, учли все 
+                             наши пожелания и выполнили работу качественно и профессионально. Спасибо за отличную работу!</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/men_4.jpg" alt="">
+                        <p>Name</p>
+                   
+                        <p>Darius in fuga cum aquam turbidam et cadaveribus inquinatam bibisset,
+                        negavit unquam se bibisse iucundius. Nunquam videlicet sitiens biberat.</p>
+                    </div>
+                    <div class="slide">
+                        <img src="img/men_5.jpg" alt="">
+                        <p>Name</p>
+                   
+                        <p>Darius in fuga cum aquam turbidam et cadaveribus inquinatam bibisset,
+                        negavit unquam se bibisse iucundius. Nunquam videlicet sitiens biberat.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <script src="Script/index.js"></script>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!--Контакты -->
+    
+    <section class="sec_kon" id="kon">
+        <div class="kon">
+            <div class="kon_text">
+                <p style="font-size: 3em; margin-top: auto; margin-bottom: auto;">Как с нами связаться?</p>
+                <br>
+                <p style="margin: auto; font-size: 2.5em;">Адрес:</p>
+                <br>
+                <p>Москва, Звёздный бульвар 23с10</p>
+                <br>
+                <p style="margin: auto; font-size: 2.5em;">Номер телефона:</p>
+                <br>
+                <p>+7(919) 962-62-22</p>
+                <br>
+                <p style="margin: auto; font-size: 2.5em;">Электронная почта</p>
+                <br>
+                <p>artikam@yandex.ru</p>
+            </div>
+
+            <div >
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0454230df4496cbfdfd23707f9dada3b59fee0b04ff76a5df434c598ff482f46&amp;source=constructor" width="800" height="700" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
 
     </main>
 
@@ -185,22 +369,44 @@
 
 
             <div class="divf1">
-                <nav class="nav-1">
-                    <ul>
-                        <li><a class="nav-2" href="#">Главная</a></li>
-                        <li><a class="nav-2" href="#us">Услуги</a></li>
-                        <li><a class="nav-2" href="#nr">Наши работы</a></li>
-                        <li><a class="nav-2" href="#otz">Отзывы</a></li>
-                        <li><a class="nav-2" href="#kon">Контакты</a></li>
-                    </ul>
-                </nav>
+
+                <div class="footer_1">
+
+                <div class="log_f">
+                    <p> <a href="#" >ArktikaM</a></p>
+                    <br>
+                    <p style="font-size: 1em; letter-spacing: 0.1em; padding-top: 0;">© 2024 ArktikaM. Все права защищены</p>
+                    
+                </div>
+                
+                    <nav class="nav_1">
+                        <div class="nav_1_1">
+                            <a class="nav-2" href="#">Главная</a>
+                            <br>
+                            <br>
+                            <a class="nav-2" href="#us">Услуги</a>
+                        </div>
+
+                        <div class="nav_1_1">
+                            <a class="nav-2" href="#ons">О нас</a>
+                            <br>
+                            <br>
+                            <a class="nav-2" href="#kon">Контакты</a>
+                        </div>
+
+                        <div class="nav_1_1">
+                        <p class="nav-2" href="#">Мы в соц сетях:</p>
+                        <br>
+                        <div class="nav-3">
+                        <a  href="https://wa.me/9199626222?text=Здравствуйте!"><img src="img/whatsapp.png" alt=""></a>
+                        <a  href="#us"><img src="img/tg.png" alt=""></a>
+                        <a  href="#us"><img src="img/vk.png" alt=""></a>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            
-            <div class="divf3">
-                <h3 style="color: white;">Наша почта</h3>
-            <a href="#"><p style="color: white;">@mail.ru</p></a>
-            </div>
-            <br>
+
         </div>
 
     </footer>
